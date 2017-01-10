@@ -6,5 +6,5 @@ library(jiebaR)
 library(jiebaRD)
 mixSeg <- worker()
 cutter <- worker(bylines = T)
-teepr2 <- "C:/Users/acer/Desktop/use/teepr.csv"
+teepr2 <- "https://weilunlo.github.io/ContentFarm/file/teepr.csv"
 teepr <- read.csv(teepr2, fileEncoding = "BIG5")

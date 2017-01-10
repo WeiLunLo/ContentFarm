@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shiny)\nsource(\"global.R\")\nserver <- function(input, output) {\n  \n}",
+    "created" : 1484065001659.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2965258333",
+    "id" : "2814032E",
+    "lastKnownWriteTime" : 1484065043,
+    "last_content_update" : 1484065043540,
+    "path" : "C:/Users/acer/Desktop/ContentFarm/ContentFarm/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

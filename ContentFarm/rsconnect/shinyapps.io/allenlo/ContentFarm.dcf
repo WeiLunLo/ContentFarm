@@ -3,8 +3,8 @@ title: ContentFarm
 account: allenlo
 server: shinyapps.io
 appId: 150223
-bundleId: 675414
+bundleId: 675582
 url: https://allenlo.shinyapps.io/contentfarm/
-when: 1484094627.26683
+when: 1484108463.22862
 asMultiple: FALSE
 asStatic: FALSE

@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "library(shinythemes)\n#library(jiebaR)\n\n#cutter = worker(dict = \"www/jieba.dict.utf8\", hmm = \"www/hmm_model.utf8\", user = \"www/user.dict.utf8\",\n               # idf = \"www/idf.utf8\", stop_word =\"www/stop_words.utf8\")\n\n\nmultiplot <-\n  function(..., plotlist=NULL, file, cols=1, layout=NULL) {\n    library(grid)\n    \n    # Make a list from the ... arguments and plotlist\n    plots <- c(list(...), plotlist)\n    \n    numPlots = length(plots)\n    \n    # If layout is NULL, then use 'cols' to determine layout\n    if (is.null(layout)) {\n      # Make the panel\n      # ncol: Number of columns of plots\n      # nrow: Number of rows needed, calculated from # of cols\n      layout <- matrix(seq(1, cols * ceiling(numPlots/cols)),\n                       ncol = cols, nrow = ceiling(numPlots/cols))\n    }\n    \n    if (numPlots==1) {\n      print(plots[[1]])\n      \n    } else {\n      # Set up the page\n      grid.newpage()\n      pushViewport(viewport(layout = grid.layout(nrow(layout), ncol(layout))))\n      \n      # Make each plot, in the correct location\n      for (i in 1:numPlots) {\n        # Get the i,j matrix positions of the regions that contain this subplot\n        matchidx <- as.data.frame(which(layout == i, arr.ind = TRUE))\n        \n        print(plots[[i]], vp = viewport(layout.pos.row = matchidx$row,\n                                        layout.pos.col = matchidx$col))\n      }\n    }\n  }\n",
+    "contents" : "library(shinythemes)\nlibrary(png)\n#library(jiebaR)\n\n#cutter = worker(dict = \"www/jieba.dict.utf8\", hmm = \"www/hmm_model.utf8\", user = \"www/user.dict.utf8\",\n               # idf = \"www/idf.utf8\", stop_word =\"www/stop_words.utf8\")\n\n\nmultiplot <-\n  function(..., plotlist=NULL, file, cols=1, layout=NULL) {\n    library(grid)\n    \n    # Make a list from the ... arguments and plotlist\n    plots <- c(list(...), plotlist)\n    \n    numPlots = length(plots)\n    \n    # If layout is NULL, then use 'cols' to determine layout\n    if (is.null(layout)) {\n      # Make the panel\n      # ncol: Number of columns of plots\n      # nrow: Number of rows needed, calculated from # of cols\n      layout <- matrix(seq(1, cols * ceiling(numPlots/cols)),\n                       ncol = cols, nrow = ceiling(numPlots/cols))\n    }\n    \n    if (numPlots==1) {\n      print(plots[[1]])\n      \n    } else {\n      # Set up the page\n      grid.newpage()\n      pushViewport(viewport(layout = grid.layout(nrow(layout), ncol(layout))))\n      \n      # Make each plot, in the correct location\n      for (i in 1:numPlots) {\n        # Get the i,j matrix positions of the regions that contain this subplot\n        matchidx <- as.data.frame(which(layout == i, arr.ind = TRUE))\n        \n        print(plots[[i]], vp = viewport(layout.pos.row = matchidx$row,\n                                        layout.pos.col = matchidx$col))\n      }\n    }\n  }\n",
     "created" : 1484065065017.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1365563387",
+    "hash" : "2753541166",
     "id" : "837E49F",
-    "lastKnownWriteTime" : 1484065869,
-    "last_content_update" : 1484065869949,
+    "lastKnownWriteTime" : 1484094565,
+    "last_content_update" : 1484094565554,
     "path" : "C:/Users/acer/Desktop/ContentFarm/ContentFarm/global.R",
     "project_path" : "global.R",
     "properties" : {

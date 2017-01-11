@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "library(shiny)\nsource(\"global.R\")\nserver <- function(input, output) {\n  \n}",
+    "contents" : "library(shiny)\nsource(\"global.R\")\nserver <- function(input, output,session) {\n  \n  output$title = renderUI({\n    title = paste0(\"https://weilunlo.github.io/ContentFarm/ContentFarm/image/rg/lm_\",input$title,\".png\")\n    tags$img(src = input$title)  \n  })\n  \n  \n  \n}",
     "created" : 1484065001659.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2965258333",
+    "hash" : "1239934144",
     "id" : "2814032E",
-    "lastKnownWriteTime" : 1484065043,
-    "last_content_update" : 1484065043540,
+    "lastKnownWriteTime" : 1484106408,
+    "last_content_update" : 1484106408897,
     "path" : "C:/Users/acer/Desktop/ContentFarm/ContentFarm/server.R",
     "project_path" : "server.R",
     "properties" : {

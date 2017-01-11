@@ -26,15 +26,30 @@ shinyUI(
              tabPanel("資料探索",
                       fluidPage(
                         titlePanel("資料探索"),
-                        sidebarPanel(),
+                        sidebarPanel(
+                          selectInput("fanpage", label = h3("以來源區分"), 
+                                      choices = list("Teepr趣味新聞" = "teepr","Bomb01" = "Bomb01",
+                                                     "Ptt01" = "ptt01", "躁咖" = "EBCbuzz"), 
+                                      selected = 0),
+                          selectInput("", label = h3("以詞性區分"), 
+                                      choices = list("名詞" = 1,"動詞" = 2,
+                                                     "形容詞" = 3, "副詞" = 4), 
+                                      selected = 1),
+                          selectInput("react", label = h3("以迴響數區分"), 
+                                      choices = list("全部" = 0,"高迴響數" = 1,
+                                                     "低迴響數" = 2), 
+                                      selected = 0)
+                        ),
                         mainPanel(
                           tabsetPanel(
                             tabPanel("詞頻表"),
-                            tabPanel("濫用標點符號"),
+                            tabPanel("濫用標點符號",
+                                     img(src = "https://weilunlo.github.io/ContentFarm/ContentFarm/image/symbol/symbol.png")),
                             tabPanel("詞性的高頻詞"),
                             tabPanel("用詞分析"),
                             tabPanel("時間分析"),
-                            tabPanel("標題長度"),
+                            tabPanel("標題長度",
+                                     imageOutput("title")),
                             tabPanel("關鍵字查詢系統")
                           )
                         )

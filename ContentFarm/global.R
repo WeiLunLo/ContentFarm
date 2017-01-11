@@ -1,4 +1,5 @@
 library(shinythemes)
+library(png)
 #library(jiebaR)
 
 #cutter = worker(dict = "www/jieba.dict.utf8", hmm = "www/hmm_model.utf8", user = "www/user.dict.utf8",

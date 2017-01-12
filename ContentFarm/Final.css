@@ -1,12 +1,14 @@
 body{
    background-color: black;
-   font-family:Microsoft JhengHei
+   font-family:Microsoft JhengHei;
+   color: white
  }
    
 .current{
   background-image: url("https://weilunlo.github.io/ContentFarm/ContentFarm/image/slide/background.png");
   background-color: #FF8000;
-  font-family:Microsoft JhengHei
+  font-family:Microsoft JhengHei;
+  color:white;
 }
 
 .next {
@@ -22,12 +24,20 @@ body{
 }
 
 .title-slide{
-   background-color:  white;
    background-image: url("https://weilunlo.github.io/ContentFarm/ContentFarm/image/slide/cover.png");
    background-position: center;
    background-repeat: no-repeat;
+   color: white
    }
 
 .segue {
   background-color: #FF8000;
+}
+
+h2{
+  color: white
+}
+
+h3{
+  color: white
 }

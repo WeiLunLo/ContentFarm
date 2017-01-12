@@ -1,0 +1,33 @@
+body{
+   background-color: black;
+   font-family:Microsoft JhengHei
+ }
+   
+.current{
+  background-image: url("https://weilunlo.github.io/ContentFarm/ContentFarm/image/slide/background.png");
+  background-color: #FF8000;
+  font-family:Microsoft JhengHei
+}
+
+.next {
+  background-image: url("https://weilunlo.github.io/ContentFarm/ContentFarm/image/slide/background.png");
+  background-color: #FF8000;
+  font-family:Microsoft JhengHei
+}
+
+.past{
+  background-image: url("https://weilunlo.github.io/ContentFarm/ContentFarm/image/slide/background.png");
+  background-color: #FF8000;
+  font-family:Microsoft JhengHei
+}
+
+.title-slide{
+   background-color:  white;
+   background-image: url("https://weilunlo.github.io/ContentFarm/ContentFarm/image/slide/cover.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   }
+
+.segue {
+  background-color: #FF8000;
+}

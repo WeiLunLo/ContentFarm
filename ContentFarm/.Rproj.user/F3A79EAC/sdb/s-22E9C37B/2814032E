@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shiny)\nsource(\"global.R\")\n\nshinyServer(\n  function(input, output) {\n  \n  #part\n  output$part1 <- renderUI({\n    titlepart1 = paste(\"https://weilunlo.github.io/ContentFarm/ContentFarm/image/\",input$part,\"/teepr_\",input$part,\".png\",sep = \"\")\n    tags$img(src = titlepart1) \n  })\n  output$part2 = renderUI({\n    titlepart2 = paste0(\"https://weilunlo.github.io/ContentFarm/ContentFarm/image/\",input$part,\"/Bomb01_\",input$part,\".png\")\n    tags$img(src = titlepart2) \n  })\n  output$part3 = renderUI({\n    titlepart3 = paste0(\"https://weilunlo.github.io/ContentFarm/ContentFarm/image/\",input$part,\"/ptt01_\",input$part,\".png\")\n    tags$img(src = titlepart3) \n  })\n  output$part4 = renderUI({\n    titlepart4 = paste0(\"https://weilunlo.github.io/ContentFarm/ContentFarm/image/\",input$part,\"/EBCbuzz_\",input$part,\".png\")\n    tags$img(src = titlepart4) \n  })\n  #hl\n  output$hl1 = renderUI({\n    titlehl1 = paste0(\"https://weilunlo.github.io/ContentFarm/ContentFarm/image/\",input$part,\"/teepr_\",input$react,\"_\",input$part,\".png\")\n    tags$img(src = titlehl1) \n  })\n  output$hl2 = renderUI({\n    titlehl2 = paste0(\"https://weilunlo.github.io/ContentFarm/ContentFarm/image/\",input$part,\"/Bomb01_\",input$react,\"_\",input$part,\".png\")\n    tags$img(src = titlehl2) \n  })\n  output$hl3 = renderUI({\n    titlehl3 = paste0(\"https://weilunlo.github.io/ContentFarm/ContentFarm/image/\",input$part,\"/ptt01_\",input$react,\"_\",input$part,\".png\")\n    tags$img(src = titlehl3) \n  })\n  output$hl4 = renderUI({\n    titlehl4 = paste0(\"https://weilunlo.github.io/ContentFarm/ContentFarm/image/\",input$part,\"/EBCbuzz_\",input$react,\"_\",input$part,\".png\")\n    tags$img(src = titlehl4) \n  })\n  \n  #title\n  output$title1 = renderUI({\n    titlepath1 = paste0(\"https://weilunlo.github.io/ContentFarm/ContentFarm/image/scatter/dist_\",input$fanpage,\".png\")\n    tags$img(src = titlepath1) \n  })\n  output$title2 = renderUI({\n    titlepath2 = paste0(\"https://weilunlo.github.io/ContentFarm/ContentFarm/image/rg/lm_\",input$fanpage,\".png\")\n    tags$img(src = titlepath2) \n  })\n  \n  #time\n  output$time = renderUI({\n    timepath = paste0(\"https://weilunlo.github.io/ContentFarm/ContentFarm/image/timeavg/time_\",input$fanpage,\".png\")\n    tags$img(src = timepath)\n  })\n  \n  output$partresult1 = renderUI({\n    if (input$fanpage == \"teepr\"){\n      tags$h2(\"Teepr\")\n    }else if(input$fanpage == \"Bomb01\") {\n      tags$h2(\"Bomb01\")\n    }else if(input$fanpage == \"ptt01\") {\n      tags$h2(\"Ptt01\")\n    }else {\n      tags$h2(\"EBCbuzz\")\n    }\n  })\n  output$partresult2 = renderUI({\n    if (input$part == \"n\"){\n      tags$h4(\"「大家」、「網友」、「人」為幾個常見用字，有製造輿論的效果。\")\n    }else if(input$part == \"v\") {\n      tags$h4(\"「讓」榮登農場最愛用動詞。\")\n    }else if(input$part == \"a\") {\n      tags$h4(\"「大」強調程度不一般，可以強化渲染力。 \")\n    }else {\n      tags$h4(\"大量使用「都」字，營造「大家一致認可」的感覺。\")\n    }\n  })\n  output$partresult3 = renderUI({\n    if (input$part == \"n\"){\n      tags$h4(\"例：「 大家一開始看到這團棉花時還想說是誰弄掉了，結果看到棉花球「一抬起頭」時才發現是地表最萌驚喜！」\")\n    }else if(input$part == \"v\") {\n      tags$h4(\"例：「他在17歲「變性成女生」後竟淪落到賣淫自殘，1年後決定「重返男兒身」的他 讓大家都看傻了！」\")\n    }else if(input$part == \"a\") {\n      tags$h4(\"例：「艾迪瑞德曼「比電影還精彩」真實背景 大揭密！貴族家庭出身的他說「很對不起威廉王子…」」\")\n    }else {\n      tags$h4(\"例：「她騎著哈雷機車跟男友單膝下跪求婚，說完會加碼送房產後「一轉頭」…大家 都發出哇一聲！」\")\n    }\n  })\n})",
+    "created" : 1484065001659.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3634239248",
+    "id" : "2814032E",
+    "lastKnownWriteTime" : 1484184075,
+    "last_content_update" : 1484184075562,
+    "path" : "C:/Users/acer/Desktop/ContentFarm/ContentFarm/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

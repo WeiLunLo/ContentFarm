@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shinythemes)\nlibrary(png)\n",
+    "created" : 1484065065017.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "713709217",
+    "id" : "837E49F",
+    "lastKnownWriteTime" : 1484240240,
+    "last_content_update" : 1484240240959,
+    "path" : "C:/Users/acer/Desktop/ContentFarm/ContentFarm/global.R",
+    "project_path" : "global.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -207,21 +207,21 @@
 <h2>
 
 <ul>
-<li>使用Rfacebook套件爬取臉書粉絲團內容及迴響資料，再以xml2套件以爬回來的連結再行二次爬蟲，取得標題內容
+<li>使用Rfacebook套件爬取臉書粉絲團內容及迴響資料，再以xml2套件以爬回來的連結再進行二次<strong style="color:#9AFF02">爬蟲</strong>，取得標題內容
 
 </h3>
 
 <h2>
 
 <ul>
-<li>以R清理資料，並作資料探勘分析
+<li>以R<strong style="color:#9AFF02">清理資料</strong>，並作<strong style="color:#9AFF02">資料探勘分析</strong>
 
 </h3>
 
 <h2>
 
 <ul>
-<li>建立標題迴響預測模型
+<li>建立標題迴響<strong style="color:#9AFF02">預測模型</strong>，生成<strong style="color:#9AFF02">產品</strong>
 
 </h3>
 
@@ -289,7 +289,7 @@
 
 <h2 style="color:white">
 
-不分高低迴響的高頻詞(以名詞為例)
+綜觀高頻詞(以名詞為例)
 
 </h2>
 
@@ -479,37 +479,37 @@
 
 <h3>
 
-*使用「大家」、「網友」等團體名詞
+*使用「大家」、「網友」等團體<strong style="color:#9AFF02">名詞</strong>
 
 </h3>
 
 <h3>
 
-*使用被迫態「讓」與「發現」
+*<strong style="color:#9AFF02">動詞</strong>使用被迫態「讓」與「發現」
 
 </h3>
 
 <h3>
 
-*「大」、「小」誇張且簡單形容詞
+*「大」、「小」誇張且簡單<strong style="color:#9AFF02">形容詞</strong>
 
 </h3>
 
 <h3>
 
-*「卻」、「竟然」等轉折副詞
+*「卻」、「竟然」等轉折<strong style="color:#9AFF02">副詞</strong>
 
 </h3>
 
 <h3>
 
-*30~40字
+*<strong style="color:#9AFF02">標題長度：</strong>30~40字
 
 </h3>
 
 <h3>
 
-*對象族群設定、買廣告(？)
+*<strong style="color:#9AFF02">對象</strong>族群設定、買廣告(？)
 
 </h3></div>
 
@@ -517,19 +517,108 @@
 
 <h2>
 
-svm model
+反制
 
 </h2>
 
-<p>輸入標題，預測獲得讚數</p>
+<div align="center">
+<p><img src="https://weilunlo.github.io/ContentFarm/ContentFarm/image/slide/open.png" height = 400></p></div>
 
 </article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-22">
 
 <h2>
 
-lm model
+線性模型(Linear Model, LM)
 
-</h2></article></slide>
+</h2>
+
+<div style="background: rgba(30%,0%,0%,0.6);">
+<h3>
+
+回歸項：<strong style="color:#9AFF02">高回響標題之高頻詞表、標題長度、特殊標點等</strong>
+
+</h3>
+
+<h3>
+
+預測標題可能獲得的讚數
+
+</h3>
+
+<h3>
+
+→判定係數：0.1 hmmm
+
+</h3></div>
+
+<p><br> <img src ="https://weilunlo.github.io/ContentFarm/ContentFarm/image/model/lm1.png"></p>
+
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-23">
+
+<h2>
+
+支撐向量機(Support Vector Machine, SVM)
+
+</h2>
+
+<div style="background: rgba(30%,0%,0%,0.6);">
+<h3>
+
+將資料轉換至<strong style="color:#9AFF02">向量空間</strong>進行分類
+
+</h3>
+
+<h3>
+
+預測標題是否為高迴響(超出1個Z分數)
+
+</h3>
+
+<h3>
+
+<strong style="color:#9AFF02">F1_Score: 0.9 ！！！</strong>
+
+</h3></div>
+
+<p><br> <img src ="https://weilunlo.github.io/ContentFarm/ContentFarm/image/model/svm3.png" width = 500> <img src ="https://weilunlo.github.io/ContentFarm/ContentFarm/image/model/svm1.png"></p>
+
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article  id="section-24">
+
+<h2>
+
+展望
+
+</h2>
+
+<br>
+
+<div style= "background: rgba(30%,0%,0%,0.6);">
+
+<h2>
+
+<ul>
+<li>提供撰寫參考
+
+</h2>
+
+<h2>
+
+<ul>
+<li>大眾媒體研究
+
+</h2>
+
+<h2>
+
+<ul>
+<li>內容事先篩選 and so on&#8230;
+
+</h2>
+
+</div></li>
+</ul></li>
+</ul></li>
+</ul></article></slide>
 
 
   <slide class="backdrop"></slide>

@@ -22,6 +22,7 @@ Codes:
 The web crawler and text mining parts are written with R. (Not in this repository)
 
 The online web page (THIS REPOSITORY) is written with Shiny, an R package for interactive web apps.
+To see more details, check [here](https://shiny.rstudio.com/).
 
 User Guides:
 ----
